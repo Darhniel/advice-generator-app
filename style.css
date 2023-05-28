@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+    background-color: var(--Dark-Blue);
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    width: 85vw;
+    margin: 0 auto;
+    background-color: var(--Dark-Grayish-Blue);
+    position: relative;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+h1 {
+    color: var(--Neon-Green);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.75rem;
+    color: var(--Light-Cyan);
+    line-height: 1.5;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@keyframes text-flow {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+img.divider {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+div.image {
+    padding: 1.5rem;
+    background-color: var(--Neon-Green);
+    border-radius: 4rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: -2rem;
+    display: flex;
+    width: 4.5rem;
+}
+
+div.image:hover {
+    box-shadow: 0 0 2.5rem var(--Neon-Green);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--Light-Cyan);
+}
+.attribution a { 
+    color: var(--Neon-Green); 
+}
+
+
+@media screen and (min-width: 700px) {
+    main{
+        width: 23rem;
+    }
+}
